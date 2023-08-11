@@ -1,5 +1,5 @@
 """Main module."""
 
-from gendiff.generate_diff import generate_diff
+from gendiff.tree import generate_diff
 
 __all__ = ('generate_diff', )
