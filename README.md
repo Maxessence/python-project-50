@@ -6,4 +6,5 @@
 Второй учебный проект "Вычислитель отличий" школы Хекслет.
 
 Демонстрация сравнения двух файлов
-<a href="https://asciinema.org/connect/5531e8d2-746b-4bf2-bc0b-f91977a202cc" target="_blank"><img src="https://asciinema.org/connect/5531e8d2-746b-4bf2-bc0b-f91977a202cc.cvg" /></a>
+<a href="https://asciinema.org/a/If4o9nZGcXXgY4aDyhbdXQM0X" target="_blank"><img src="https://asciinema.org/a/If4o9nZGcXXgY4aDyhbdXQM0X.cvg" /></a>
+
