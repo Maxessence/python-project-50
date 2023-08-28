@@ -1,3 +1,5 @@
 .venv
 dist/
 .scripts._pycache_
+.coverage
+coverage.xml

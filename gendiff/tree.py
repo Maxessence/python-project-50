@@ -1,17 +1,12 @@
 #!/usr/bin/env python3
 
-
 import json
-
-
-def get_open(file1, file2):
-    data1 = json.load(open(file1))
-    data2 = json.load(open(file2))
-    return data1, data2
+from gendiff.parser import get_parse
 
 
 def generate_diff(file1, file2):
-    data1, data2 = get_open(file1, file2)
+    data1 = get_parse(file1)
+    data2 = get_parse(file2)
     diff_dict = {}
     for key1 in sorted(data1):
         if key1 in data2:
