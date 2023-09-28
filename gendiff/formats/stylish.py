@@ -15,18 +15,19 @@ def unpack(value, depth, replacer):
     deep_indent = replacer * deep_indent_size
     current_indent = replacer * (deep_indent_size - 2)
     nested = depth + 1
-    if isinstance(value, dict):
-        for key, value in value.items():
-            result.append(f'{deep_indent}{Indent}{key}: '
-                          f'{unpack(value, nested, replacer)}')
-        result = itertools.chain("{", result, [current_indent + "}"])
-        return '\n'.join(result)
-    elif isinstance(value, bool):
-        return str(value).lower()
-    elif value is None:
-        return 'null'
-    else:
-        return value
+    match value:
+        case dict(value):
+            for key, value in value.items():
+                result.append(f'{deep_indent}{Indent}{key}: '
+                              f'{unpack(value, nested, replacer)}')
+            result = itertools.chain("{", result, [current_indent + "}"])
+            return '\n'.join(result)
+        case True | False:
+            return str(value).lower()
+        case None:
+            return 'null'
+        case _:
+            return value
 
 
 def make_stylish(tree, replacer=' ', spaces_count=4):

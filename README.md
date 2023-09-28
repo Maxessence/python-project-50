@@ -5,6 +5,22 @@
 
 Второй учебный проект "Вычислитель отличий" школы Хекслет.
 
-Демонстрация сравнения двух файлов
-<a href="https://asciinema.org/a/If4o9nZGcXXgY4aDyhbdXQM0X" target="_blank"><img src="https://asciinema.org/a/If4o9nZGcXXgY4aDyhbdXQM0X.cvg" /></a>
+Программа, позволяющая сравнить два json или yaml файла, на произошедшие изменения в данных.
+Имеется возможность вывода данных в в разных форматах.
+
+Демонстрация сравнения двух плоских файлов.
+
+<a href="https://asciinema.org/a/ktKtrBPXVET8uCOlQxqgamXSZ" target="_blank"><img src="https://asciinema.org/a/ktKtrBPXVET8uCOlQxqgamXSZ.svg" /></a>
+
+
+Демонстрация сравнения двух файлов, с вложенными структурами.
+
+
+<a href="https://asciinema.org/a/XUDE663GSHrOF5LQNe11ItxtB" target="_blank"><img src="https://asciinema.org/a/XUDE663GSHrOF5LQNe11ItxtB.svg" /></a>
+
+
+
+
+
+
 
