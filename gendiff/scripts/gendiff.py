@@ -1,17 +1,13 @@
 #!/usr/bin/env python3
 
 
-import argparse
-from gendiff.tree import generate_diff
+from gendiff.cli import get_arguments
+from gendiff.formats.formatter import make_formatting
 
 
 def main():
-    parser = argparse.ArgumentParser(description='Generate difference.')
-    parser.add_argument('first_file', type=str)
-    parser.add_argument('second_file', type=str)
-    parser.add_argument('-f', '--format', help='set format of output')
-    args = parser.parse_args()
-    result = generate_diff(args.first_file, args.second_file)
+    first_file, second_file, format = get_arguments()
+    result = make_formatting(first_file, second_file, format)
     print(result)
 
 
