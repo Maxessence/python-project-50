@@ -23,6 +23,6 @@
 <a href="https://asciinema.org/a/kYZhAERIxAtrJBKaQMh0pC2zq" target="_blank"><img src="https://asciinema.org/a/kYZhAERIxAtrJBKaQMh0pC2zq.svg" /></a>
 
 
-Демонстрация сравнения двух файлов, с вложенными структурами (формат json).
+Демонстрация сравнения двух плоских файлов (формат json).
 
-<a href="https://asciinema.org/a/UAFUXRPazoCPO4qI0lFL29zMM" target="_blank"><img src="https://asciinema.org/a/UAFUXRPazoCPO4qI0lFL29zMM.svg" /></a>
+<a href="https://asciinema.org/a/OIhUhZG6z4nKoSRshyl7gh0uC" target="_blank"><img src="https://asciinema.org/a/OIhUhZG6z4nKoSRshyl7gh0uC.svg" /></a>
