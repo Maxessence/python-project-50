@@ -4,6 +4,7 @@ from gendiff.formats.stylish import make_stylish
 from gendiff.formats.json import make_json
 from gendiff.generated_diff import generate_diff
 from gendiff.parser import get_parse
+from gendiff.formats.plain import make_plain
 
 
 def make_formatting(first_file, second_file, format):
@@ -15,3 +16,5 @@ def make_formatting(first_file, second_file, format):
             return make_stylish(difference)
         case 'json':
             return make_json(difference)
+        case 'plain':
+            return make_plain(difference)
