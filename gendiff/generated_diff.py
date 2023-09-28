@@ -1,7 +1,7 @@
 #!/usr/bin/env python3
 
 
-def generate_diff(old_data, new_data):
+def generate_diff(old_data: dict, new_data: dict) -> list:
     keys = old_data.keys() | new_data.keys()
     result = []
     for k in sorted(keys):

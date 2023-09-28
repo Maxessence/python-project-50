@@ -12,8 +12,8 @@ def get_open(file):
 
 def get_format(file):
     split_up = os.path.splitext(file)
-    file_extenthion = split_up[1]
-    return file_extenthion
+    file_extension = split_up[1]
+    return file_extension
 
 
 def get_parse(file):
@@ -29,3 +29,5 @@ def get_parse(file):
         case ".yml":
             data = yaml.load(data, Loader=yaml.Loader)
             return data
+        case _:
+            raise Exception('Invalid file format')

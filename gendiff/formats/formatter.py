@@ -18,3 +18,5 @@ def make_formatting(first_file, second_file, format):
             return make_json(difference)
         case 'plain':
             return make_plain(difference)
+        case _:
+            raise Exception('Unknown format')

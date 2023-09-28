@@ -13,7 +13,7 @@ def convert(value):
             return (f"'{value}'")
 
 
-def make_plain(difference):
+def make_plain(difference: list) -> str:
     path = []
 
     def iter_(value, path):

@@ -30,7 +30,7 @@ def unpack(value, depth, replacer):
             return value
 
 
-def make_stylish(tree, replacer=' ', spaces_count=4):
+def make_stylish(tree: list, replacer=' ', spaces_count=4) -> str:
 
     def iter_(current_value, depth):
         deep_indent_size = depth * spaces_count - 2
