@@ -9,6 +9,8 @@ def convert(value):
             return str(value).lower()
         case None:
             return 'null'
+        case int(value):
+            return value
         case _:
             return (f"'{value}'")
 
