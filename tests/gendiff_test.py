@@ -2,7 +2,6 @@
 
 import pytest
 from gendiff.generated_diff import generate_diff
-from gendiff.formats.formatter import make_formatting
 
 
 file1_plain_json = "tests/fixtures/file1.json"
@@ -32,8 +31,7 @@ datatest3 = [(file1_plain_json, file2_plain_json, json_result),
 
 @pytest.mark.parametrize("file1, file2, result", datatest)
 def test_stylish(file1, file2, result):
-    diff = generate_diff(file1, file2)
-    exp_result = make_formatting(diff, format='stylish')
+    exp_result = generate_diff(file1, file2, format='stylish')
     with open(result, "r") as f:
         text = f.read()
         assert exp_result == text
@@ -41,8 +39,7 @@ def test_stylish(file1, file2, result):
 
 @pytest.mark.parametrize("file1, file2, result", datatest2)
 def test_plain(file1, file2, result):
-    diff = generate_diff(file1, file2)
-    exp_result = make_formatting(diff, format="plain")
+    exp_result = generate_diff(file1, file2, format="plain")
     with open(result, "r") as f:
         text = f.read()
         assert exp_result == text
@@ -50,8 +47,7 @@ def test_plain(file1, file2, result):
 
 @pytest.mark.parametrize("file1, file2, result", datatest3)
 def test_json(file1, file2, result):
-    diff = generate_diff(file1, file2)
-    exp_result = make_formatting(diff, format="json")
+    exp_result = generate_diff(file1, file2, format="json")
     with open(result, "r") as f:
         text = f.read()
         assert exp_result == text
