@@ -14,5 +14,4 @@ def get_arguments():
         help='Set format of output. '
         'Option: stylish, plain, json (default stylish))')
     args = parser.parse_args()
-    print(args.first_file, args.second_file)
     return args.first_file, args.second_file, args.format
